@@ -2,7 +2,7 @@
 """
 Created on Tue Dec 16 19:21:31 2025
 
-@author: HP
+@author: Abdulwakeel Ibraheem
 """
 
 import sympy as sp
@@ -50,7 +50,8 @@ def is_nested(func: str)-> int:
     if sum == 0:
         return 0
     return sum + 1
-        
+
+
 def parse_abs(func:str)->str:
     '''
     Replaces '|' in the function string to 'abs()'
@@ -409,8 +410,11 @@ class FunctionAnalyser:
             return True
         return False
 
+#Example Usage
+
 function = 'exp(-x^2)'
 analyse = FunctionAnalyser(function,'x', 100)
 print(analyse.Analysis)
-expr = analyse.f_prime_at()
-sp.pprint(expr)
+#expr = analyse.f_prime_at()
+#sp.pprint(expr)
+
